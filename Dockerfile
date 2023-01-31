@@ -1,4 +1,4 @@
-FROM ruby:3.1.3
+FROM ruby:3.2.0
 
 # Ensure node.js 19 is available for apt-get
 RUN curl -sL https://deb.nodesource.com/setup_19.x | bash -
@@ -18,14 +18,14 @@ RUN set -ex && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-WORKDIR /microblog
+WORKDIR /taskleaf
 
-COPY Gemfile /microblog/Gemfile
-COPY Gemfile.lock /microblog/Gemfile.lock
-# COPY package.json /microblog/package.json
-# COPY yarn.lock /microblog/yarn.lock
+COPY Gemfile /taskleaf/Gemfile
+COPY Gemfile.lock /taskleaf/Gemfile.lock
+COPY package.json /taskleaf/package.json
+COPY yarn.lock /taskleaf/yarn.lock
 
-# RUN yarn install --check-files
+RUN yarn install --check-files
 
 ENV LANG C.UTF-8
 ENV TZ Asia/Tokyo
