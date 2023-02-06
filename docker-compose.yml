@@ -23,6 +23,7 @@ services:
       PORT: 3000
       BINDING: 0.0.0.0
       SELENIUM_DRIVER_URL: http://selenium_chrome:4444/wd/hub
+      RAILS_SYSTEM_TESTING_SCREENSHOT: inline
     stdin_open: true
     tty: true
   selenium_chrome:
