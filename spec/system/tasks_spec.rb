@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "タスク管理機能", type: :system do
+describe "タスク管理機能", type: :system, selenium: true do
   describe "一覧表示機能" do
     before do
       # ユーザーAを作成

@@ -22,8 +22,13 @@ services:
     environment:
       PORT: 3000
       BINDING: 0.0.0.0
+      SELENIUM_DRIVER_URL: http://selenium_chrome:4444/wd/hub
     stdin_open: true
     tty: true
+  selenium_chrome:
+    image: selenium/standalone-chrome-debug
+    logging:
+      driver: none
 volumes:
   bundle:
   node_modules:
