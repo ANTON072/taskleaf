@@ -60,4 +60,9 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  # テスト実行前に前回テストのscreenshotをディレクトリごと削除する
+  config.before(:all) do
+    FileUtils.rm_rf(Rails.root.join('tmp', 'screenshots'), secure: true)
+  end
 end
