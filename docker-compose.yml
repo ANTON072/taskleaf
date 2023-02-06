@@ -13,6 +13,8 @@ services:
     build: .
     volumes:
       - .:/taskleaf
+      - bundle:/usr/local/bundle
+      - node_modules:/taskleaf/node_modules
     ports:
       - "3000:3000"
     depends_on:
@@ -22,3 +24,6 @@ services:
       BINDING: 0.0.0.0
     stdin_open: true
     tty: true
+volumes:
+  bundle:
+  node_modules:
