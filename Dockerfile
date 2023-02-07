@@ -12,6 +12,7 @@ RUN set -ex && \
     apt-get install -y --no-install-recommends libvips && \
     apt-get install -y --no-install-recommends nodejs && \
     apt-get install -y --no-install-recommends graphviz && \
+    apt-get install -y --no-install-recommends vim && \
     : "Install Yarn..." && \
     npm install -g yarn && \
     : "Cleaning..." && \
