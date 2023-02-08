@@ -13,10 +13,23 @@ class TasksController < ApplicationController
     @task = Task.new
   end
 
+  def confirm_new
+    @task = current_user.tasks.build task_params
+    # binding.irb
+    unless @task.valid?
+      render :new, status: :unprocessable_entity
+    end
+  end
+
   def create
     # 検証エラーがあってもう一度新規登録画面を表示する際に、ビューに検証を行った現物の
     # Taskオブジェクトを渡す必要があるので
     @task = current_user.tasks.build(task_params)
+    if params[:back].present?
+      render :new, status: :unprocessable_entity
+      return
+    end
+
     # ユーザーの入力次第では検証エラーによって登録が失敗するのでsave!ではなくsave
     if @task.save
       redirect_to @task, notice: "タスク「#{@task.name}」を登録しました。"
