@@ -3,7 +3,7 @@ class Task < ApplicationRecord
   validates :name, length: { maximum: 30 }
   validate :validate_name_not_including_comma
 
-  before_validation :set_nameless_name
+  # before_validation :set_nameless_name
 
   belongs_to :user
 
