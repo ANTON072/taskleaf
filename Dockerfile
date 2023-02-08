@@ -32,4 +32,3 @@ ENV LANG C.UTF-8
 ENV TZ Asia/Tokyo
 
 RUN bundle install
-#CMD ["rails", "server", "-b", "0.0.0.0"]
