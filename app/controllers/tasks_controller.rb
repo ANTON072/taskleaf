@@ -14,9 +14,13 @@ class TasksController < ApplicationController
   end
 
   def confirm_new
+    # 新規登録画面から受け取ったパラメータを元にタスクオブジェクトを作成
     @task = current_user.tasks.build task_params
-    # binding.irb
-    unless @task.valid?
+    # バリデーションエラーがあったら新規登録画面を表示
+    if @task.valid?
+      # turbo driveの都合でsuccess時もステータスを書く
+      render :confirm_new, status: :created
+    else
       render :new, status: :unprocessable_entity
     end
   end
@@ -34,7 +38,6 @@ class TasksController < ApplicationController
     if @task.save
       redirect_to @task, notice: "タスク「#{@task.name}」を登録しました。"
     else
-      # binding.irb
       render :new, status: :unprocessable_entity
     end
   end
