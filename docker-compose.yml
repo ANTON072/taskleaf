@@ -14,8 +14,6 @@ services:
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s"
     volumes:
       - .:/taskleaf
-      - bundle:/usr/local/bundle
-      - node_modules:/taskleaf/node_modules
     ports:
       - "3000:3000"
     depends_on:
@@ -31,6 +29,3 @@ services:
     image: selenium/standalone-chrome-debug
     logging:
       driver: none
-volumes:
-  bundle:
-  node_modules:
