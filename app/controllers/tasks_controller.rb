@@ -37,6 +37,7 @@ class TasksController < ApplicationController
 
     # ユーザーの入力次第では検証エラーによって登録が失敗するのでsave!ではなくsave
     if @task.save
+      TaskMailer.creation_email(@task).deliver_now
       redirect_to @task, notice: "タスク「#{@task.name}」を登録しました。"
     else
       render :new, status: :unprocessable_entity

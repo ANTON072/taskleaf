@@ -37,7 +37,17 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+
+  # mainCatcher用の設定
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { address: 'mailcatcher', port: 1025 }
+
+  # host = 'localhost:3000'
+  # config.action_mailer.default_url_options = { host: host, protocol: 'http' }
+
+  # host = "localhost:3000"
+  # config.action_mailer.default_url_options = { host: host, protocol: 'http' }
 
   config.action_mailer.perform_caching = false
 

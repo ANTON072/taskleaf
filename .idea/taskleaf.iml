@@ -50,19 +50,24 @@
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.38.0, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.2.0, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, taskleaf) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="daemons (v1.4.1, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.7.1, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.0, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.12.0, taskleaf) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="eventmachine (v1.2.7, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.8.1, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_bot (v6.2.1, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_bot_rails (v6.2.0, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.15.5, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.1.0, taskleaf) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="haml (v6.1.1, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.12.0, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="importmap-rails (v1.1.5, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.11.5, taskleaf) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v2.6.3, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.19.1, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.8.0.1, taskleaf) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mailcatcher (v0.2.4, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="marcel (v1.0.2, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="matrix (v0.4.2, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="method_source (v1.0.0, taskleaf) [gem]" level="application" />
@@ -87,6 +92,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rails_autolink (v1.1.7, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v7.0.4.2, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.0.6, taskleaf) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ransack (v4.0.0, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.6.2, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.5, taskleaf) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.12.1, taskleaf) [gem]" level="application" />

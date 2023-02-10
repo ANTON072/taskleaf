@@ -29,3 +29,9 @@ services:
     image: selenium/standalone-chrome-debug
     logging:
       driver: none
+  mailcatcher:
+    image: schickling/mailcatcher
+    container_name: mailcatcher
+    ports:
+      - '1080:1080'
+      - '1025:1025'
