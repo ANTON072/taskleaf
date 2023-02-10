@@ -18,4 +18,9 @@ class Task < ApplicationRecord
   def set_nameless_name
     self.name = "名前なし" if name.blank?
   end
+
+  def self.ransackable_attributes(auth_object = nil)
+    %w[created_at description id name updated_at user_id]
+  end
+
 end

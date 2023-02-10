@@ -175,6 +175,10 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    ransack (4.0.0)
+      activerecord (>= 6.1.5)
+      activesupport (>= 6.1.5)
+      i18n
     regexp_parser (2.6.2)
     rexml (3.2.5)
     rspec-core (3.12.1)
@@ -266,6 +270,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
   rails_autolink
+  ransack
   rspec-rails (~> 6.0.0)
   sassc-rails
   selenium-webdriver
