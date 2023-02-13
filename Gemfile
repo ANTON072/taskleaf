@@ -18,6 +18,7 @@ gem "bootstrap", "4.6.2"
 gem "bcrypt"
 gem "rails_autolink"
 gem "ransack"
+gem "image_processing", ">= 1.2"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
